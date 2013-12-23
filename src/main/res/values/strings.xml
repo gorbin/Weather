@@ -4,5 +4,62 @@
     <string name="app_name">Weather</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="pd_title">Обновление</string>
+    <string name="pd_message">Подождите немного, определяется месторасположение</string>
+    <string name="pd_forecast">Обрабатываем прогноз</string>
+    <string name="GPS_error">Не удается точно определить расположение, включите GPS или уточните регион</string>
+    <string name="GPS_button">Включить GPS</string>
+    <string name="listreg_button">Выбрать регион</string>
+    <string name="error">Проблемы с интернет соединением, перезапустите приложение</string>
+    <string name="noLocation">Не можем определить ваше расположение</string>
+    <string name="close">Закрыть</string>
+    <string name="pressure">%s мм. рт.ст.</string>
+    <string name="wind">%s м/с</string>
+    <string name="relwet"></string>
+    <string name="heat"></string>
+    <string-array name="temp_color">
+        <item>#DF711F</item>
+        <item>#EFC12F</item>
+        <item>#599BBC</item>
+        <item>#2B48BC</item>
+    </string-array>
+    <string-array name="time_day">
+        <item>Утро</item>
+        <item>День</item>
+        <item>Вечер</item>
+        <item>Ночь</item>
+    </string-array>
+    <string-array name="week_day">
+        <item>Error!</item>
+        <item>Вс</item>
+        <item>Пн</item>
+        <item>Вт</item>
+        <item>Ср</item>
+        <item>Чт</item>
+        <item>Пт</item>
+        <item>Сб</item>
+    </string-array>
+    <string-array name="сloudiness">
+        <item>Ясно</item>
+        <item>Малооблачно</item>
+        <item>Облачно</item>
+        <item>Пасмурно</item>
+        <item>Дождь</item>
+        <item>Ливень</item>
+        <item>Небольшой снег</item>
+        <item>Снег</item>
+        <item>Гроза</item>
+        <item>Туман</item>
+        <item>Без осадков</item>
+    </string-array>
+    <string-array name="wind_direction">
+        <item>Cеверный</item>
+        <item>Северо-Восточный</item>
+        <item>Восточный</item>
+        <item>Юго-Восточный</item>
+        <item>Южный</item>
+        <item>Юго-Занадный</item>
+        <item>Западный</item>
+        <item>Северо-Западный</item>
+    </string-array>
 </resources>

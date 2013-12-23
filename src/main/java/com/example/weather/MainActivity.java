@@ -1,8 +1,14 @@
 package com.example.weather;
 
+import android.location.Location;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.view.View;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
@@ -16,7 +22,12 @@ public class MainActivity extends Activity {
 		log = (TextView) findViewById(R.id.log);
 		gl = new GetLocation(this);
 		location = gl.getCurrentLocation();
+        if(location==null){
+            log.setText("WAT");
+        } else {
 		log.setText(""+location.getLatitude()+"/"+location.getLongitude());
+        }
+//        log.setText("WAT");
     }
 
 
@@ -28,7 +39,7 @@ public class MainActivity extends Activity {
     }
 	
 	public void onParse(View view){
-		lt = new LoadTask(this, region);
+        LoadTask lt = new LoadTask();
         lt.execute();
 	}
 	///////////////////////////////////
