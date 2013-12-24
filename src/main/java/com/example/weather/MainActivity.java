@@ -59,7 +59,7 @@ public class MainActivity extends Activity {
 		
         @Override
         protected ArrayList<Weather> doInBackground(Void... params) {
-           publishProgress("wat!");
+			publishProgress("wat!");
             return null;
         }
 		

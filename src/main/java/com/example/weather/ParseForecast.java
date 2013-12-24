@@ -7,7 +7,5 @@ public class ParseForecast {
     public ParseForecast(Context context, Location location){
         this.context = context;
 		this.location = location;
-        
-
     }
 }

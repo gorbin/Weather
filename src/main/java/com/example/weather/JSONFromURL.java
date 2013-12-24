@@ -7,7 +7,6 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -29,7 +28,6 @@ public class JSONFromURL {
         } catch(Exception e) {
             return null;
         }
-
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(is,"utf-8"),8);
             StringBuilder sb = new StringBuilder();
@@ -42,17 +40,14 @@ public class JSONFromURL {
         } catch(Exception e) {
             return null;
         }
-
-        // Convert string to object
         try {
             jsonObject = new JSONObject(result);
         } catch(JSONException e) {
             return null;
         }
-
         return jsonObject;
-
     }
+}
 
-    }
+
 
